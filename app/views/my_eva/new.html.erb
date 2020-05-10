@@ -1,0 +1,145 @@
+<h1>MyEva#new</h1>
+<p>Find me in app/views/my_eva/new.html.erb</p>
+<%= form_for(@eva, :url => { controller:'my_eva', action:'create'})do |f| %>
+<%= f.label :勝気である %>
+<%= f.check_box :question_01 %>
+<br>
+<%= f.label :交際好きである %>
+<%= f.check_box :question_02 %>
+<br>
+<%= f.label :集中力がある %>
+<%= f.check_box :question_03 %>
+<br>
+<%= f.label :流行を取り入れる %>
+<%= f.check_box :question_04 %>
+<br>
+<%= f.label :自信がある %>
+<%= f.check_box :question_05 %>
+<br>
+<%= f.label :真面目である %>
+<%= f.check_box :question_06 %>
+<br>
+<%= f.label :陽気である %>
+<%= f.check_box :question_07 %>
+<br>
+<%= f.label :几帳面である  %>
+<%= f.check_box :question_08 %>
+<br>
+<%= f.label :尊敬されている %>
+<%= f.check_box :question_09 %>
+<br>
+<%= f.label :健康的である %>
+<%= f.check_box :question_10%>
+<br>
+<%= f.label :柔軟性がある %>
+<%= f.check_box :question_11 %>
+<br>
+<%= f.label :めげない %>
+<%= f.check_box :question_12 %>
+<br>
+<%= f.label :話し上手である %>
+<%= f.check_box :question_13 %>
+<br>
+<%= f.label :現実的である %>
+<%= f.check_box :question_14 %>
+<br>
+<%= f.label :悩まない %>
+<%= f.check_box :question_15 %>
+<br>
+<%= f.label :賢い %>
+<%= f.check_box :question_16 %>
+<br>
+<%= f.label :過去にとらわれない %>
+<%= f.check_box :question_17 %>
+<br>
+<%= f.label :忍耐強い  %>
+<%= f.check_box :question_18 %>
+<br>
+<%= f.label :自分の能力を理解している  %>
+<%= f.check_box :question_19 %>
+<br>
+<%= f.label :落ち着いている %>
+<%= f.check_box :question_20 %>
+<br>
+<%= f.label :協調性がある %>
+<%= f.check_box :question_21 %>
+<br>
+<%= f.label :礼儀正しい %>
+<%= f.check_box :question_22 %>
+<br>
+<%= f.label :人をねたまない %>
+<%= f.check_box :question_23 %>
+<br>
+<%= f.label :他人の評価を気にしない %>
+<%= f.check_box :question_24 %>
+<br>
+<%= f.label :信頼できる%>
+<%= f.check_box :question_25 %>
+<br>
+<%= f.label :親切である %>
+<%= f.check_box :question_26 %>
+<br>
+<%= f.label :冒険を好む %>
+<%= f.check_box :question_27 %>
+<br>
+<%= f.label :行動力がある %>
+<%= f.check_box :question_28 %>
+<br>
+<%= f.label :慎重である %>
+<%= f.check_box :question_29 %>
+<br>
+<%= f.label :問題解決能力が高い%>
+<%= f.check_box :question_30 %>
+<br>
+<%= f.label :リーダーシップがある %>
+<%= f.check_box :question_31 %>
+<br>
+<%= f.label :教え上手 %>
+<%= f.check_box :question_32 %>
+<br>
+<%= f.label :交渉が上手い  %>
+<%= f.check_box :question_33 %>
+<br>
+<%= f.label :企画力がある %>
+<%= f.check_box :question_34 %>
+<br>
+<%= f.label :判断力がある %>
+<%= f.check_box :question_35 %>
+<br>
+<%= f.label :責任感がある %>
+<%= f.check_box :question_36 %>
+<br>
+<%= f.label :傾聴力が高い %>
+<%= f.check_box :question_37 %>
+<br>
+<%= f.label :空気が読める  %>
+<%= f.check_box :question_38 %>
+<br>
+<%= f.label :大胆である  %>
+<%= f.check_box :question_39 %>
+<br>
+<%= f.label :穏やかである%>
+<%= f.check_box :question_40 %>
+<br>
+<%= f.label :フレンドリーである %>
+<%= f.check_box :question_41 %>
+<br>
+<%= f.label :論理的である  %>
+<%= f.check_box :question_42 %>
+<br>
+<%= f.label :センスがある%>
+<%= f.check_box :question_43 %>
+<br>
+<%= f.label :自発的である %>
+<%= f.check_box :question_44 %>
+<br>
+<%= f.label :共感的である  %>
+<%= f.check_box :question_45 %>
+<br>
+<%= f.label :ユーモアがある %>
+<%= f.check_box :question_46 %>
+<br>
+<%= f.submit "登録する" %>
+<br>
+<%= link_to "ホーム", top_index_path %>
+<% end %>

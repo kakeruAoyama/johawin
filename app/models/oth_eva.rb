@@ -1,0 +1,2 @@
+class OthEva < ApplicationRecord
+end

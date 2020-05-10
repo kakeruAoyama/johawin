@@ -1,0 +1,46 @@
+<h1>MyEva#index</h1>
+<p>Find me in app/views/my_eva/index.html.erb</p>
+<div>
+    【自分での分析】
+    <br>
+    <% if @my_eva.question_01 == 1 %>
+        勝気である
+    <% end %>
+</div>
+
+    <% if @othevas == nil %>
+        【他人からの分析】
+        <br>
+        まだ投稿されてません....
+        <br>
+        性格分析をお友達にお願いしてみよう！
+        <br>
+        <%= "#{oth_eva_url(id: current_user.id)}" %>
+    <% else %>
+        <% @othevas.each do |o| %>
+            <div>
+                名前：<%= o.evaluate_user_name %>
+                <% if @o.question_01 == 1 %>
+                    勝気である
+                <% end %>
+                <% if @o.question_02 == 1 %>
+                    交際好きである
+                <% end %>
+                <% if @o.question_03 == 1 %>
+                    集中力がある
+                <% end %>
+                <% if @o.question_04 == 1 %>
+                    流行を取り入れる
+                <% end %>
+                <% if @o.question_05 == 1 %>
+                    自信がある
+                <% end %>
+                <% if @o.question_06 == 1 %>
+                    真面目である
+                <% end %>
+                <% if @o.question_07 == 1 %>
+                    陽気である
+                <% end %>
+            </div>
+        <% end %>
+    <% end %>

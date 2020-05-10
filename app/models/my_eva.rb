@@ -1,0 +1,2 @@
+class MyEva < ApplicationRecord
+end
