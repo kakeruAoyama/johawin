@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bulma";
+
+ nav {
+     margin-top: 1em;
+ }
+ .text-center{
+     margin: 1em;
+ }
+ 

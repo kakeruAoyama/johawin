@@ -35,6 +35,11 @@ class MyEvaController < ApplicationController
     @oth_evas = OthEva.where(evaluated_user_id: current_user.id)
   end
 
+  def destroy
+    OthEva.find(params[:id]).destroy
+    redirect_back(fallback_location: root_path)
+  end
+
   def createupdate
   end
 

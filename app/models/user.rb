@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  attribute :url_token, :string, default: SecureRandom.hex(10)
+  validates :url_token, presence: true, uniqueness: true
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -30,5 +32,10 @@ class User < ActiveRecord::Base
   end 
   def will_save_change_to_email?
     false
+  end
+
+  # URLをランダムな文字列にする
+  def to_param
+    url_token
   end
 end

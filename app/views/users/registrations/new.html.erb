@@ -4,12 +4,13 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :ログインID %><br />
+    <%="ログインID (ログイン時に使用され、他のユーザーにも公開されます)" %>
+    <br>
     <%= f.text_field :user_id, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= "パスワード"  %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> 文字以上)</em>
     <% end %><br />
@@ -17,12 +18,12 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= "パスワードの確認"  %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "アカウント作成" %>
+    <%= f.submit "アカウント作成", :class=>"btn btn-dark" %>
   </div>
 <% end %>
 

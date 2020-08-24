@@ -198,7 +198,12 @@
     【他者からの分析】
         <% @oth_evas.each do |o| %>
             <div>
-                名前：<%= o.evaluate_user_name %>
+                名前：
+                <% if o.evaluate_user_name.blank? %>
+                    匿名
+                <% else %>
+                    <%= o.evaluate_user_name %>
+                <% end %>
                 <br>
                 <% if o.question_01 == 1 %>
                     勝気である
@@ -381,9 +386,10 @@
                 <% if o.question_46 == 1 %>
                     ユーモアがある
                 <% end %>
-                
+                <br>
+                <%= link_to "削除する", oth_eva_destroy_path(o.id), method: :delete, data: { confirm: '削除しますか？' }%>
             </div>
         <% end %>
     <% end %>
 
-    <%= link_to "戻る", :back %>
+    <%= link_to "戻る", user_path %>

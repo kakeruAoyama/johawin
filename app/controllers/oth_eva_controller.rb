@@ -1,15 +1,12 @@
 class OthEvaController < ApplicationController
   def new
     @eva = OthEva.new
-    @user = User.find(params[:id])
+    @user = User.find_by(url_token: params[:url_token])
     
   end
 
   def create
-    
     @eva = OthEva.new(oth_eva_params)
-   
-       
     if @eva.save
        redirect_to   action: :recommend
     else
