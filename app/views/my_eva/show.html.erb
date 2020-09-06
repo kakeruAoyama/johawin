@@ -1,395 +1,408 @@
-<h1>MyEva#index</h1>
-<p>Find me in app/views/my_eva/index.html.erb</p>
-<div>
-    【自分での分析】
-    <br>
-    <% if @my_eva.question_01 == 1 %>
-        勝気である
-    <% end %>
-    <% if @my_eva.question_02 == 1 %>
-        交際好きである
-    <% end %>
+<h1>評価詳細</h1>
 
-    <% if @my_eva.question_03 == 1 %>
-        集中力がある
-    <% end %>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col">
+        <div class="card " style="width: 100%;">
+            <div class="card-body center-block">
+                <h5 class="card-title">【自分での分析】</h5>
+                <p class="card-text">
+                    <% if @my_eva.question_01 == 1 %>
+                        勝気である
+                    <% end %>
+                    <% if @my_eva.question_02 == 1 %>
+                        交際好きである
+                    <% end %>
 
-    <% if @my_eva.question_04 == 1 %>
-        流行を取り入れる
-    <% end %>
-    
-    <% if @my_eva.question_05 == 1 %>
-        自信がある
-    <% end %>
+                    <% if @my_eva.question_03 == 1 %>
+                        集中力がある
+                    <% end %>
 
-    <% if @my_eva.question_06 == 1 %>
-        真面目である
-    <% end %>
+                    <% if @my_eva.question_04 == 1 %>
+                        流行を取り入れる
+                    <% end %>
+                    
+                    <% if @my_eva.question_05 == 1 %>
+                        自信がある
+                    <% end %>
 
-    <% if @my_eva.question_07 == 1 %>
-        陽気である
-    <% end %>
+                    <% if @my_eva.question_06 == 1 %>
+                        真面目である
+                    <% end %>
 
-    <% if @my_eva.question_08 == 1 %>
-        几帳面である
-    <% end %>
+                    <% if @my_eva.question_07 == 1 %>
+                        陽気である
+                    <% end %>
 
-    <% if @my_eva.question_09 == 1 %>
-        挑発されない
-    <% end %>
+                    <% if @my_eva.question_08 == 1 %>
+                        几帳面である
+                    <% end %>
 
-    <% if @my_eva.question_10 == 1 %>
-        健康的である
-    <% end %>
+                    <% if @my_eva.question_09 == 1 %>
+                        挑発されない
+                    <% end %>
 
-    <% if @my_eva.question_11 == 1 %>
-        柔軟性がある
-    <% end %>
+                    <% if @my_eva.question_10 == 1 %>
+                        健康的である
+                    <% end %>
 
-    <% if @my_eva.question_12 == 1 %>
-        めげない
-    <% end %>
+                    <% if @my_eva.question_11 == 1 %>
+                        柔軟性がある
+                    <% end %>
 
-    <% if @my_eva.question_13 == 1 %>
-        話し上手である
-    <% end %>
+                    <% if @my_eva.question_12 == 1 %>
+                        めげない
+                    <% end %>
 
-    <% if @my_eva.question_14 == 1 %>
-        現実的である
-    <% end %>
+                    <% if @my_eva.question_13 == 1 %>
+                        話し上手である
+                    <% end %>
 
-    <% if @my_eva.question_15 == 1 %>
-        悩まない
-    <% end %>
+                    <% if @my_eva.question_14 == 1 %>
+                        現実的である
+                    <% end %>
 
-    <% if @my_eva.question_16 == 1 %>
-        賢い
-    <% end %>
+                    <% if @my_eva.question_15 == 1 %>
+                        悩まない
+                    <% end %>
 
-    <% if @my_eva.question_17 == 1 %>
-        過去にとらわれない
-    <% end %>
+                    <% if @my_eva.question_16 == 1 %>
+                        賢い
+                    <% end %>
 
-    <% if @my_eva.question_18 == 1 %>
-        忍耐強い
-    <% end %>
+                    <% if @my_eva.question_17 == 1 %>
+                        過去にとらわれない
+                    <% end %>
 
-    <% if @my_eva.question_19 == 1 %>
-        自分の能力を理解している
-    <% end %>
+                    <% if @my_eva.question_18 == 1 %>
+                        忍耐強い
+                    <% end %>
 
-    <% if @my_eva.question_20 == 1 %>
-        落ち着いている
-    <% end %>
+                    <% if @my_eva.question_19 == 1 %>
+                        自分の能力を理解している
+                    <% end %>
 
-    <% if @my_eva.question_21 == 1 %>
-        協調性がある
-    <% end %>
+                    <% if @my_eva.question_20 == 1 %>
+                        落ち着いている
+                    <% end %>
 
-    <% if @my_eva.question_22 == 1 %>
-        礼儀正しい
-    <% end %>
+                    <% if @my_eva.question_21 == 1 %>
+                        協調性がある
+                    <% end %>
 
-    <% if @my_eva.question_23 == 1 %>
-        人をねたまない
-    <% end %>
+                    <% if @my_eva.question_22 == 1 %>
+                        礼儀正しい
+                    <% end %>
 
-    <% if @my_eva.question_24 == 1 %>
-        他人の評価を気にしない
-    <% end %>
-    <% if @my_eva.question_25 == 1 %>
-        信頼できる
-    <% end %>
+                    <% if @my_eva.question_23 == 1 %>
+                        人をねたまない
+                    <% end %>
 
-    <% if @my_eva.question_26 == 1 %>
-        親切である
-    <% end %>
-    
-    <% if @my_eva.question_27 == 1 %>
-        冒険を好む
-    <% end %>
+                    <% if @my_eva.question_24 == 1 %>
+                        他人の評価を気にしない
+                    <% end %>
+                    <% if @my_eva.question_25 == 1 %>
+                        信頼できる
+                    <% end %>
 
-    <% if @my_eva.question_28 == 1 %>
-        行動力がある
-    <% end %>
+                    <% if @my_eva.question_26 == 1 %>
+                        親切である
+                    <% end %>
+                    
+                    <% if @my_eva.question_27 == 1 %>
+                        冒険を好む
+                    <% end %>
 
-    <% if @my_eva.question_29 == 1 %>
-        慎重である
-    <% end %>
+                    <% if @my_eva.question_28 == 1 %>
+                        行動力がある
+                    <% end %>
 
-    <% if @my_eva.question_30 == 1 %>
-        問題解決の能力が高い
-    <% end %>
+                    <% if @my_eva.question_29 == 1 %>
+                        慎重である
+                    <% end %>
 
-    <% if @my_eva.question_31 == 1 %>
-        リーダーシップがある
-    <% end %>
+                    <% if @my_eva.question_30 == 1 %>
+                        問題解決の能力が高い
+                    <% end %>
 
-    <% if @my_eva.question_32 == 1 %>
-        教え上手
-    <% end %>
+                    <% if @my_eva.question_31 == 1 %>
+                        リーダーシップがある
+                    <% end %>
 
-    <% if @my_eva.question_33 == 1 %>
-        交渉がうまい
-    <% end %>
+                    <% if @my_eva.question_32 == 1 %>
+                        教え上手
+                    <% end %>
 
-    <% if @my_eva.question_34 == 1 %>
-        企画力がある
-    <% end %>
+                    <% if @my_eva.question_33 == 1 %>
+                        交渉がうまい
+                    <% end %>
 
-    <% if @my_eva.question_35 == 1 %>
-        判断力がある
-    <% end %>
+                    <% if @my_eva.question_34 == 1 %>
+                        企画力がある
+                    <% end %>
 
-    <% if @my_eva.question_36 == 1 %>
-        責任感がある
-    <% end %>
+                    <% if @my_eva.question_35 == 1 %>
+                        判断力がある
+                    <% end %>
 
-    <% if @my_eva.question_37 == 1 %>
-        傾聴力が高い
-    <% end %>
+                    <% if @my_eva.question_36 == 1 %>
+                        責任感がある
+                    <% end %>
 
-    <% if @my_eva.question_38 == 1 %>
-        空気を読める
-    <% end %>
+                    <% if @my_eva.question_37 == 1 %>
+                        傾聴力が高い
+                    <% end %>
 
-    <% if @my_eva.question_39 == 1 %>
-        大胆である
-    <% end %>
+                    <% if @my_eva.question_38 == 1 %>
+                        空気を読める
+                    <% end %>
 
-    <% if @my_eva.question_40 == 1 %>
-        穏やかである
-    <% end %>
+                    <% if @my_eva.question_39 == 1 %>
+                        大胆である
+                    <% end %>
 
-    <% if @my_eva.question_41 == 1 %>
-        フレンドリーである
-    <% end %>
+                    <% if @my_eva.question_40 == 1 %>
+                        穏やかである
+                    <% end %>
 
-    <% if @my_eva.question_42 == 1 %>
-        論理的である
-    <% end %>
+                    <% if @my_eva.question_41 == 1 %>
+                        フレンドリーである
+                    <% end %>
 
-    <% if @my_eva.question_43 == 1 %>
-        センスがある
-    <% end %>
+                    <% if @my_eva.question_42 == 1 %>
+                        論理的である
+                    <% end %>
 
-    <% if @my_eva.question_44 == 1 %>
-        自発的である
-    <% end %>
+                    <% if @my_eva.question_43 == 1 %>
+                        センスがある
+                    <% end %>
 
-    <% if @my_eva.question_45 == 1 %>
-        共感的である
-    <% end %>
+                    <% if @my_eva.question_44 == 1 %>
+                        自発的である
+                    <% end %>
 
-    <% if @my_eva.question_46 == 1 %>
-        ユーモアがある
-    <% end %>
-</div>
+                    <% if @my_eva.question_45 == 1 %>
+                        共感的である
+                    <% end %>
 
-    <% if @oth_evas == nil %>
-        【他者からの分析】
-        <br>
-        まだ投稿されてません....
-        <br>
-        性格分析をお友達にお願いしてみよう！
-        <br>
-        <%= "#{oth_eva_url(id: current_user.id)}" %>
-    <% else %>
-    【他者からの分析】
-        <% @oth_evas.each do |o| %>
-            <div>
-                名前：
-                <% if o.evaluate_user_name.blank? %>
-                    匿名
-                <% else %>
-                    <%= o.evaluate_user_name %>
-                <% end %>
+                    <% if @my_eva.question_46 == 1 %>
+                        ユーモアがある
+                    <% end %>
+                </p>
+                <%= button_to "編集", my_eva_edit_path(@my_eva.id), method: :get,class:"btn btn-dark"%>
+            </div>
+        </div>
+        <div>
+            <% if @oth_evas == nil %>
+                【他者からの分析】
                 <br>
-                <% if o.question_01 == 1 %>
-                    勝気である
-                <% end %>
-                <% if o.question_02 == 1 %>
-                    交際好きである
-                <% end %>
-
-                <% if o.question_03 == 1 %>
-                    集中力がある
-                <% end %>
-
-                <% if o.question_04 == 1 %>
-                    流行を取り入れる
-                <% end %>
-               
-                <% if o.question_05 == 1 %>
-                    自信がある
-                <% end %>
-
-                <% if o.question_06 == 1 %>
-                    真面目である
-                <% end %>
-
-                <% if o.question_07 == 1 %>
-                    陽気である
-                <% end %>
-
-                <% if o.question_08 == 1 %>
-                    几帳面である
-                <% end %>
-
-                <% if o.question_09 == 1 %>
-                    挑発されない
-                <% end %>
-
-                <% if o.question_10 == 1 %>
-                    健康的である
-                <% end %>
-
-                <% if o.question_11 == 1 %>
-                    柔軟性がある
-                <% end %>
-
-                <% if o.question_12 == 1 %>
-                    めげない
-                <% end %>
-
-                <% if o.question_13 == 1 %>
-                    話し上手である
-                <% end %>
-
-                <% if o.question_14 == 1 %>
-                    現実的である
-                <% end %>
-
-                <% if o.question_15 == 1 %>
-                    悩まない
-                <% end %>
-
-                <% if o.question_16 == 1 %>
-                    賢い
-                <% end %>
-
-                <% if o.question_17 == 1 %>
-                    過去にとらわれない
-                <% end %>
-
-                <% if o.question_18 == 1 %>
-                    忍耐強い
-                <% end %>
-
-                <% if o.question_19 == 1 %>
-                    自分の能力を理解している
-                <% end %>
-
-                <% if o.question_20 == 1 %>
-                    落ち着いている
-                <% end %>
-
-                <% if o.question_21 == 1 %>
-                    協調性がある
-                <% end %>
-
-                <% if o.question_22 == 1 %>
-                    礼儀正しい
-                <% end %>
-
-                <% if o.question_23 == 1 %>
-                    人をねたまない
-                <% end %>
-
-                <% if o.question_24 == 1 %>
-                    他人の評価を気にしない
-                <% end %>
-                <% if o.question_25 == 1 %>
-                    信頼できる
-                <% end %>
-
-                <% if o.question_26 == 1 %>
-                    親切である
-                <% end %>
-               
-                <% if o.question_27 == 1 %>
-                    冒険を好む
-                <% end %>
-
-                <% if o.question_28 == 1 %>
-                    行動力がある
-                <% end %>
-
-                <% if o.question_29 == 1 %>
-                    慎重である
-                <% end %>
-
-                <% if o.question_30 == 1 %>
-                    問題解決の能力が高い
-                <% end %>
-
-                <% if o.question_31 == 1 %>
-                    リーダーシップがある
-                <% end %>
-
-                <% if o.question_32 == 1 %>
-                    教え上手
-                <% end %>
-
-                <% if o.question_33 == 1 %>
-                    交渉がうまい
-                <% end %>
-
-                <% if o.question_34 == 1 %>
-                    企画力がある
-                <% end %>
-
-                <% if o.question_35 == 1 %>
-                    判断力がある
-                <% end %>
-
-                <% if o.question_36 == 1 %>
-                    責任感がある
-                <% end %>
-
-                <% if o.question_37 == 1 %>
-                    傾聴力が高い
-                <% end %>
-
-                <% if o.question_38 == 1 %>
-                    空気を読める
-                <% end %>
-
-                <% if o.question_39 == 1 %>
-                    大胆である
-                <% end %>
-
-                <% if o.question_40 == 1 %>
-                    穏やかである
-                <% end %>
-
-                <% if o.question_41 == 1 %>
-                    フレンドリーである
-                <% end %>
-
-                <% if o.question_42 == 1 %>
-                    論理的である
-                <% end %>
-
-                <% if o.question_43 == 1 %>
-                    センスがある
-                <% end %>
-
-                <% if o.question_44 == 1 %>
-                    自発的である
-                <% end %>
-
-                <% if o.question_45 == 1 %>
-                    共感的である
-                <% end %>
-
-                <% if o.question_46 == 1 %>
-                    ユーモアがある
-                <% end %>
+                まだ投稿されてません....
                 <br>
-                <%= link_to "削除する", oth_eva_destroy_path(o.id), method: :delete, data: { confirm: '削除しますか？' }%>
+                性格分析をお友達にお願いしてみよう！
+                <br>
+                <%= "#{oth_eva_url(id: current_user.id)}" %>
+            <% else %>
+                <% @oth_evas.each do |o| %>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">【他者からの分析】</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">名前：
+                                <% if o.evaluate_user_name.blank? %>
+                                    匿名
+                                <% else %>
+                                    <%= o.evaluate_user_name %>
+                                <% end %>
+                            </h6>
+                            <p class="card-text">
+                                <% if o.question_01 == 1 %>
+                                    勝気である
+                                <% end %>
+                                <% if o.question_02 == 1 %>
+                                    交際好きである
+                                <% end %>
+
+                                <% if o.question_03 == 1 %>
+                                    集中力がある
+                                <% end %>
+
+                                <% if o.question_04 == 1 %>
+                                    流行を取り入れる
+                                <% end %>
+                            
+                                <% if o.question_05 == 1 %>
+                                    自信がある
+                                <% end %>
+
+                                <% if o.question_06 == 1 %>
+                                    真面目である
+                                <% end %>
+
+                                <% if o.question_07 == 1 %>
+                                    陽気である
+                                <% end %>
+
+                                <% if o.question_08 == 1 %>
+                                    几帳面である
+                                <% end %>
+
+                                <% if o.question_09 == 1 %>
+                                    挑発されない
+                                <% end %>
+
+                                <% if o.question_10 == 1 %>
+                                    健康的である
+                                <% end %>
+
+                                <% if o.question_11 == 1 %>
+                                    柔軟性がある
+                                <% end %>
+
+                                <% if o.question_12 == 1 %>
+                                    めげない
+                                <% end %>
+
+                                <% if o.question_13 == 1 %>
+                                    話し上手である
+                                <% end %>
+
+                                <% if o.question_14 == 1 %>
+                                    現実的である
+                                <% end %>
+
+                                <% if o.question_15 == 1 %>
+                                    悩まない
+                                <% end %>
+
+                                <% if o.question_16 == 1 %>
+                                    賢い
+                                <% end %>
+
+                                <% if o.question_17 == 1 %>
+                                    過去にとらわれない
+                                <% end %>
+
+                                <% if o.question_18 == 1 %>
+                                    忍耐強い
+                                <% end %>
+
+                                <% if o.question_19 == 1 %>
+                                    自分の能力を理解している
+                                <% end %>
+
+                                <% if o.question_20 == 1 %>
+                                    落ち着いている
+                                <% end %>
+
+                                <% if o.question_21 == 1 %>
+                                    協調性がある
+                                <% end %>
+
+                                <% if o.question_22 == 1 %>
+                                    礼儀正しい
+                                <% end %>
+
+                                <% if o.question_23 == 1 %>
+                                    人をねたまない
+                                <% end %>
+
+                                <% if o.question_24 == 1 %>
+                                    他人の評価を気にしない
+                                <% end %>
+                                <% if o.question_25 == 1 %>
+                                    信頼できる
+                                <% end %>
+
+                                <% if o.question_26 == 1 %>
+                                    親切である
+                                <% end %>
+                            
+                                <% if o.question_27 == 1 %>
+                                    冒険を好む
+                                <% end %>
+
+                                <% if o.question_28 == 1 %>
+                                    行動力がある
+                                <% end %>
+
+                                <% if o.question_29 == 1 %>
+                                    慎重である
+                                <% end %>
+
+                                <% if o.question_30 == 1 %>
+                                    問題解決の能力が高い
+                                <% end %>
+
+                                <% if o.question_31 == 1 %>
+                                    リーダーシップがある
+                                <% end %>
+
+                                <% if o.question_32 == 1 %>
+                                    教え上手
+                                <% end %>
+
+                                <% if o.question_33 == 1 %>
+                                    交渉がうまい
+                                <% end %>
+
+                                <% if o.question_34 == 1 %>
+                                    企画力がある
+                                <% end %>
+
+                                <% if o.question_35 == 1 %>
+                                    判断力がある
+                                <% end %>
+
+                                <% if o.question_36 == 1 %>
+                                    責任感がある
+                                <% end %>
+
+                                <% if o.question_37 == 1 %>
+                                    傾聴力が高い
+                                <% end %>
+
+                                <% if o.question_38 == 1 %>
+                                    空気を読める
+                                <% end %>
+
+                                <% if o.question_39 == 1 %>
+                                    大胆である
+                                <% end %>
+
+                                <% if o.question_40 == 1 %>
+                                    穏やかである
+                                <% end %>
+
+                                <% if o.question_41 == 1 %>
+                                    フレンドリーである
+                                <% end %>
+
+                                <% if o.question_42 == 1 %>
+                                    論理的である
+                                <% end %>
+
+                                <% if o.question_43 == 1 %>
+                                    センスがある
+                                <% end %>
+
+                                <% if o.question_44 == 1 %>
+                                    自発的である
+                                <% end %>
+
+                                <% if o.question_45 == 1 %>
+                                    共感的である
+                                <% end %>
+
+                                <% if o.question_46 == 1 %>
+                                    ユーモアがある
+                                <% end %>
+                            </p>
+                            <%= button_to "削除する", oth_eva_destroy_path(o.id), method: :delete, data: { confirm: '削除しますか？' },class:"btn btn-danger"%>
+                        </div>
+                    </div>
+                <% end %>
             </div>
         <% end %>
-    <% end %>
-
-    <%= link_to "戻る", user_path %>
+        <%= link_to "戻る", user_path %>
+    </div>
+    <div class="col-3"></div>
+</div>

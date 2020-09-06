@@ -14,25 +14,29 @@
 
   <body >
     <header>
-    <%= link_to root_path ,class:"navibar-item" do %>
-    <h1 class ="title is-4" style="font-family: cursive;">Johawin</h1>
-    <% end %>
-    
-    
-      <nav class="text-right">
-        <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
-        <% if user_signed_in? %> 
-          <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
-          <!-- *_path はUserモデルを作成したときに、
-          deviseにより自動で作成されてますので、rake routesで確認できます -->
-          Logged in as <strong><%= current_user.user_id %></strong>.
-          <%= link_to 'アカウント編集', edit_user_registration_path %> |
-          <%= link_to "ログアウト", sign_out_path %>
-        <% else %>
-          <%= link_to "アカウント作成", new_user_registration_path %> |
-          <%= link_to "ログイン", new_user_session_path %>
-        <% end %>
-      </nav>
+      <div class="row">
+        <div class="col-3">
+          <%= link_to root_path ,class:"navibar-item" do %>
+            <h1 class ="title is-4" >Johawin</h1>
+          <% end %>
+        </div>
+        <div class="col text-right">
+          <div class="navi">
+            <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
+            <% if user_signed_in? %> 
+              <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
+              <!-- *_path はUserモデルを作成したときに、
+              deviseにより自動で作成されてますので、rake routesで確認できます -->
+              Logged in as <strong><%= current_user.user_id %></strong>.
+              <%= link_to 'アカウント編集', edit_user_registration_path %> |
+              <%= link_to "ログアウト", sign_out_path %>
+            <% else %>
+              <%= link_to "アカウント作成", new_user_registration_path %> |
+              <%= link_to "ログイン", new_user_session_path %>
+            <% end %>
+          </div>
+        </div>
+      </div>
     </header>
 
     <p class="notice  text-center"><%= notice %></p>
