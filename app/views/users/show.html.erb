@@ -5,16 +5,16 @@
             </div>
             <div class="col-6">
                 <% if @eva.nil? %>
-                    <h1>性質登録ページ</h1>
-                        自分の性質として当てはまるものを登録してください！
+                    <h1>性質登録ページ</h1><br>
+                        自分の性質として当てはまるものを登録してください！<br><br><br>
                         <%= button_to '資質登録', my_eva_new_path,method: :get,class:'btn btn-dark' %>
 
                 <% elsif @otheva.nil? %>
-                    <h1>性質登録依頼ページ</h1>
+                    <h1>性質登録依頼ページ</h1><br>
                         まだ投稿されてません....
-                        <br>
+                        <br><br>
                         性質分析を他者にお願いしてみよう！
-                        <br>
+                        <br><br>
                         投稿共有リンク
                         <br>
                                 <!-- コピー対象要素とコピーボタン -->
@@ -22,7 +22,7 @@
                             <%= "#{oth_eva_url(url_token: current_user.url_token)}" %>
                         </textarea>
                         <br>
-                        <button onclick="copyToClipboard()">リンクをコピー</button>
+                        <button onclick="copyToClipboard()">リンクをコピー</button><br>
                     
                         <!-- bodyタグ内の下部に以下を入力する -->
 
@@ -44,12 +44,14 @@
                         
                 <% else  %>
                     <h1>調査結果</h1>
+                    <br>
                     <div class="row">
                         <div class="col">
                             <div class="open">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">【解放の窓】</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted text-center">---------------------------------<br>自己も他者も理解している性質<br>数字は他者からの評価数<br>---------------------------------</h6>
                                         <p class="card-text">
                                             <% unless @otheva01.nil? %>
                                                 <% if (@eva.question_01 == 1) && (@otheva01.question_01 == 1) %>
@@ -472,6 +474,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">【秘密の窓】</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted text-center">---------------------------------<br>自己のみが認知している性質<br>（他者から認知されていない）<br>---------------------------------</h6>
                                         <p class="card-text">
                                             <% if (@eva.question_01 == 1) && (@otheva01 == nil) %>
                                                 勝気である
@@ -769,6 +772,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">【盲点の窓】</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted text-center">---------------------------------<br>他者のみが認知している性質<br>（自己は認知していない）<br>数字は他者からの評価数<br>--------------------------------- </h6>
                                         <p class="card-text">
                                             <% unless @otheva01.nil? %>
                                                 <% if (@eva.question_01 == 0) && (@otheva01.question_01 == 1) %>
@@ -1149,6 +1153,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">【未知の窓】</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted text-center">---------------------------------<br>自己も他者も認知していない性質<br>---------------------------------</h6>
                                         <p class="card-text">
                                             <% if (@eva.question_01 == 0) && (@otheva01 == nil) %>
                                                 勝気である
@@ -1442,6 +1447,7 @@
                     </div>
                         <%= button_to "詳細を見る", my_eva_show_path(@eva.id), method: :get,class:"btn btn-dark" %>
                         <br>
+                        <br>
                         投稿共有リンク
                         <br>
                         <!-- コピー対象要素とコピーボタン -->
@@ -1451,6 +1457,7 @@
                         <br>
                         <button class="btn btn-dark" onclick="copyToClipboard()">リンクをコピー</button>
                 <% end %>
+                <br>
                 <br>
                 <%= link_to 'ジョハリの窓とは', top_index_path %>
             </div>

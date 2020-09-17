@@ -4,7 +4,13 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%="ログインID (ログイン時に使用され、他のユーザーにも公開されます)" %>
+    <%="ユーザーネーム（他者からの評価時に公開されます）" %>
+    <br>
+    <%= f.text_field :username, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%="ログインID (ログイン時に使用するのでメモしてください)" %>
     <br>
     <%= f.text_field :user_id, autofocus: true %>
   </div>

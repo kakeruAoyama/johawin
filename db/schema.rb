@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_01_183616) do
+ActiveRecord::Schema.define(version: 2020_09_10_191757) do
 
   create_table "my_evas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "question_01"
@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(version: 2020_06_01_183616) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "url_token"
+    t.string "username"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["user_id"], name: "index_users_on_user_id", unique: true
   end

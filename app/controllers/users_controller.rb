@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
+  def about 
+  end
+
   def show
     @eva = MyEva.find_by(evaluated_user_id: current_user.id)
     @otheva = OthEva.find_by( evaluated_user_id: current_user.id )

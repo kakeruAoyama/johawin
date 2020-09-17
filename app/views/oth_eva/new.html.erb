@@ -7,12 +7,12 @@
     </div>
     <div class="col-md-auto">
       <%= form_for(@eva, :url => { controller:'oth_eva', action:'create'})do |f| %>
-    <%= f.label :あなたのお名前 %>
+    <h5><%= f.label :あなたのお名前 %></h5>
     <br>
     <%= f.text_field :evaluate_user_name, placeholder:"無記名の場合は匿名で表示されます" ,size:30%>
-    <br>
-    <%= @user.user_id %>さんの性格に当てはまるものをえらんでください
-    <br>
+    <br><br> <br>
+    <h5> <%= @user.username %>さんの性格に当てはまるものをえらんでください</h5>
+    
     <%= f.hidden_field :evaluated_user_id, value: @user.id %>
     <br>
     <%= f.label :question_01,"勝気である" %>
@@ -152,9 +152,9 @@
     <br>
     <%= f.label :question_46,"ユーモアがある" %>
     <%= f.check_box :question_46 %>
-    <br>
+    <br><br>
     <%= f.submit "登録する", data: { confirm: '登録しますか？' }, :class=>"btn btn-dark" %>
-    <br>
+    <br><br>
     <%= link_to "ホーム", top_index_path %>
     </div>
     <div class="col col-lg-2">

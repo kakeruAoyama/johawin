@@ -10,15 +10,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag('favicon.ico') %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177491030-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177491030-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-177491030-1');
-</script>
+      gtag('config', 'UA-177491030-1');
+    </script>
 
   
   </head>
@@ -26,19 +26,19 @@
   <body >
     <header>
       <div class="row">
-        <div class="col-3">
+        <div class="col-4">
           <%= link_to root_path ,class:"navibar-item" do %>
-            <h1 class ="title is-4" >Johawin</h1>
+            <h1 class ="title is-2">Johawin</h1>
           <% end %>
         </div>
         <div class="col text-right">
-          <div class="navi">
+          <div class="navi is-4">
             <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
             <% if user_signed_in? %> 
               <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
               <!-- *_path はUserモデルを作成したときに、
               deviseにより自動で作成されてますので、rake routesで確認できます -->
-              Logged in as <strong><%= current_user.user_id %></strong>.
+              ようこそ！ <strong><%= current_user.username %></strong>さん
               <%= link_to 'アカウント編集', edit_user_registration_path %> |
               <%= link_to "ログアウト", sign_out_path %>
             <% else %>
