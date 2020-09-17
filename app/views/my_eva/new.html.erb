@@ -142,7 +142,7 @@
     <%= f.check_box :question_46 %>
     <br>
     <br>
-    <%= f.submit "登録する", :class=>"btn btn-dark" %>
+    <%= f.submit "登録する", data: { confirm: '登録しますか？' }, :class=>"btn btn-dark" %>
     <br>
     <br>
     <%= link_to "ホーム", top_index_path %>

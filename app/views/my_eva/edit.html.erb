@@ -1,4 +1,4 @@
-<h1>MyEva#edit</h1>
+<h1>自己資質編集</h1>
 
 <%= form_for(@eva, :url => { controller:'my_eva', action:'update'})do |f| %>
 
@@ -140,7 +140,7 @@
 <%= f.label :question_46,"ユーモアがある" %>
 <%= f.check_box :question_46 %>
 <br>
-<%= f.submit "変更する", :class=>"btn btn-dark" %>
+<%= f.submit "変更する", data: { confirm: '変更しますか？' }, :class=>"btn btn-dark" %>
 <br>
 <% end %>
 <%= link_to "ホーム", top_index_path %>
