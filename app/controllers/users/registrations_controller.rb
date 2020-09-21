@@ -10,9 +10,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    generated_url_token = SecureRandom.hex(10)
+    user = User.create!(user_id: params[:user][:user_id], password: params[:user][:password], username: params[:user][:username], url_token: generated_url_token)
+  
+    redirect_to new_user_session_path
+  end
 
   # GET /resource/edit
   # def edit

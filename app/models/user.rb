@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
-  attribute :url_token, :string, default: SecureRandom.hex(10)
   validates :url_token, presence: true, uniqueness: true
+
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
