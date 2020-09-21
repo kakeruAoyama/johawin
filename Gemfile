@@ -67,6 +67,9 @@ gem 'devise-i18n-views'
 gem 'clipboard-rails'
 gem 'jquery-rails'
 gem 'bulma-rails'
+gem 'meta-tags'
+gem 'sitemap_generator'
+gem 'whenever', require: false
 
 group :production do
   gem 'pg'
